@@ -74,6 +74,13 @@ input {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
 /* ================= ACCESSIBILITY ================= */
 
 .sr-only {
@@ -928,6 +935,10 @@ footer {
 
   .nav-menu li {
     border-bottom: 1px solid var(--border);
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: 0;
   }
 
   .nav-menu .nav-link {

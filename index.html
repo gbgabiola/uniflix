@@ -36,11 +36,18 @@
             <span class="logo-text"> <span class="logo-uni">Uni</span><span class="logo-flix">Flix</span> </span>
           </a>
 
-          <button id="openup" class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-            <i class="fas fa-bars"></i>
+          <button
+            id="openup"
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars" aria-hidden="true"></i>
           </button>
 
-          <ul class="nav-menu">
+          <ul id="primary-navigation" class="nav-menu">
             <li>
               <a class="nav-link" href="#showcase">Overview</a>
             </li>
@@ -391,8 +398,10 @@
 
         <div class="footer-bottom">
           <p>
-            &copy; <span id="current-year"></span> <span class="logo-uni">Uni</span><span class="logo-flix">Flix</span>.
-            All rights reserved.
+            &copy; <span id="current-year"></span>
+            <a href="#showcase" aria-label="UniFlix Home"
+              ><span class="logo-uni">Uni</span><span class="logo-flix">Flix</span></a
+            >. All rights reserved.
           </p>
 
           <div class="social-links">

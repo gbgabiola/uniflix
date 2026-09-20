@@ -3,42 +3,45 @@
 const menuToggle = document.querySelector('#openup');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-
-// ================= RESPONSIVE NAVIGATION =================
-menuToggle.addEventListener('click', () => {
-  const isOpen = navMenu.classList.toggle('active');
-
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-
-  menuToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-});
-
-// ================= CLOSE MENU ON NAVIGATION =================
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-
-    menuToggle.setAttribute('aria-expanded', 'false');
-
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-  });
-});
-
-// ================= CLOSE MENU ON RESIZE =================
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 650) {
-    navMenu.classList.remove('active');
-
-    menuToggle.setAttribute('aria-expanded', 'false');
-
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-  }
-});
-
-// ================= COPYRIGHT YEAR =================
 const currentYear = document.querySelector('#current-year');
 
+const MOBILE_BREAKPOINT = 650;
+
+// ================= NAVIGATION =================
+const setMenuState = isOpen => {
+  if (!menuToggle || !navMenu) return;
+
+  navMenu.classList.toggle('active', isOpen);
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+
+  menuToggle.innerHTML = isOpen
+    ? '<i class="fas fa-times" aria-hidden="true"></i>'
+    : '<i class="fas fa-bars" aria-hidden="true"></i>';
+};
+
+const closeMenu = () => {
+  setMenuState(false);
+};
+
+menuToggle?.addEventListener('click', () => {
+  if (!navMenu) return;
+
+  const isOpen = navMenu.classList.contains('active');
+  setMenuState(!isOpen);
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+const handleResize = () => {
+  if (window.innerWidth > MOBILE_BREAKPOINT) {
+    closeMenu();
+  }
+};
+
+window.addEventListener('resize', handleResize);
+
 if (currentYear) {
-  currentYear.textContent = new Date().getFullYear();
+  currentYear.textContent = String(new Date().getFullYear());
 }
