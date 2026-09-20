@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-/* ================= VARIABLES ================= */
-
 :root {
   --primary: #e63946;
   --primary-hover: #ff5260;
@@ -27,7 +23,6 @@
 }
 
 /* ================= RESET ================= */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -82,7 +77,6 @@ input:focus-visible {
 }
 
 /* ================= ACCESSIBILITY ================= */
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -96,7 +90,6 @@ input:focus-visible {
 }
 
 /* ================= LAYOUT ================= */
-
 .container {
   width: min(var(--container-width), 100% - 40px);
   margin-inline: auto;
@@ -107,7 +100,6 @@ input:focus-visible {
 }
 
 /* ================= NAVIGATION ================= */
-
 #header {
   position: relative;
   z-index: 1000;
@@ -232,7 +224,6 @@ input:focus-visible {
 }
 
 /* ================= HERO ================= */
-
 .hero {
   position: relative;
   min-height: 850px;
@@ -391,7 +382,6 @@ input:focus-visible {
 }
 
 /* ================= SECTION HEADINGS ================= */
-
 .section-heading {
   max-width: 700px;
   margin-bottom: 55px;
@@ -412,7 +402,6 @@ input:focus-visible {
 }
 
 /* ================= MUSIC ================= */
-
 .music-section {
   background: var(--bg-secondary);
 }
@@ -502,7 +491,6 @@ input:focus-visible {
 }
 
 /* ================= VIDEO ================= */
-
 .video-section {
   background: var(--bg-dark);
 }
@@ -550,7 +538,6 @@ input:focus-visible {
 }
 
 /* ================= PODCAST ================= */
-
 .podcast-section {
   background: linear-gradient(135deg, #191329, #0e0e17);
 }
@@ -657,7 +644,6 @@ input:focus-visible {
 }
 
 /* ================= GIFT CARDS ================= */
-
 .gift-section {
   background: var(--bg-secondary);
 }
@@ -707,7 +693,6 @@ input:focus-visible {
 }
 
 /* ================= NEWSLETTER ================= */
-
 .newsletter-section {
   text-align: center;
   background: radial-gradient(circle at center, rgba(230, 57, 70, 0.1), transparent 60%);
@@ -781,7 +766,6 @@ input:focus-visible {
 }
 
 /* ================= FOOTER ================= */
-
 footer {
   background: #06060b;
   border-top: 1px solid var(--border);
@@ -855,7 +839,6 @@ footer {
 }
 
 /* ================= RESPONSIVE ================= */
-
 @media (max-width: 900px) {
   .nav-menu {
     gap: 15px;
