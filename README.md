@@ -2,6 +2,8 @@
 
 UniFlix is a responsive entertainment landing page for music, movies, podcasts, and digital entertainment. It features a modern dark-themed interface with responsive navigation and sections designed for different entertainment services.
 
+![Repository Views](https://visitor-badge.laobi.icu/badge?page_id=gbgabiola.uniflix)
+
 ## Built With
 
 * HTML5
