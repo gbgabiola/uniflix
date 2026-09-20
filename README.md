@@ -4,7 +4,7 @@ UniFlix is a responsive entertainment landing page for music, movies, podcasts, 
 
 ![Repository Views](https://visitor-badge.laobi.icu/badge?page_id=gbgabiola.uniflix)
 
-## Built With
+## 🛠️ Tech Stack
 
 * HTML5
 * CSS3
@@ -13,13 +13,13 @@ UniFlix is a responsive entertainment landing page for music, movies, podcasts, 
 
 ---
 
-## Preview
+## 📸 Preview
 
-![UniFlix Preview](./img/screenshot.png)
+[![UniFlix Preview](./img/screenshot.png "UniFlix Preview")](https://gbgabiola.github.io/uniflix)
 
 Visit the [Live Preview](https://gbgabiola.github.io/uniflix)
 
-## Getting Started
+## 🚀 Getting Started
 
 To explore, run, or debug the project locally on your machine:
 
@@ -36,7 +36,7 @@ To explore, run, or debug the project locally on your machine:
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions and suggestions are welcome.
 
@@ -64,7 +64,7 @@ You can also reach out to me directly through LinkedIn:
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you want to talk shop about software engineering or collaboration opportunities, feel free to drop by:
 
